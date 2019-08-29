@@ -1,0 +1,24 @@
+layout {
+  match: Gallery (this)
+  mode (Summary)
+
+  content {
+    section {
+      content {
+        image-card {
+          aspect-ratio (4:3)
+          title-area {
+            halign (Start)
+            slot1 {
+              text {
+                value ("#{value(this.description)}")
+                style (Title_M)
+              }
+            }
+          }
+          image-url ("#{value(this.image)}")
+        }
+      }
+    }
+  }
+}

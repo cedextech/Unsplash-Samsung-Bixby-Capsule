@@ -1,0 +1,11 @@
+action (SearchImage) {
+  description (Search for images using a keyword)
+  collect {
+    input (keyword) {
+      type (Keyword)
+      min (Required) max (One)
+    }
+  }
+  output (Gallery)
+  type (Search)
+}

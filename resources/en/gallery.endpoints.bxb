@@ -1,0 +1,8 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (SearchImage) {
+      accepted-inputs (keyword)
+      local-endpoint (SearchImage.js)
+    }
+  }
+}

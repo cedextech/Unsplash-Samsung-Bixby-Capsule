@@ -1,0 +1,15 @@
+structure (Gallery) {
+  description (Output Gallery)
+
+  property (image) {
+    description (Image in the Gallery)
+    type (ImageUrl)
+    min (Required) max (One)
+  }
+
+  property (description) {
+    description (Image description)
+    type (ImageDescription)
+    min (Required) max (One)
+  }
+}
